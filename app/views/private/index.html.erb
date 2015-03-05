@@ -1,0 +1,10 @@
+<% if user_signed_in? %>
+	<h1>¡Bienvenido!</h1>
+	<p>Eres un prestigioso miembro de nuestra asociación. He aquí tu premio</p>
+	
+	<a href="http://youtu.be/dQw4w9WgXcQ"><img src="http://vignette3.wikia.nocookie.net/wii/images/9/90/600px-NSMBwii_coin-1-.jpg/revision/latest?cb=20100525233255" alt="Tu premio" width="100" height="100" title="Clásicos de internet de ayer y hoy presenta:"></a><br>
+	<%= link_to "¡Sácame de aquí!", destroy_user_session_path, :method => :delete %>
+<% else %>
+	<h2>Oops!</h2>
+	<p>Debes iniciar sesión antes de ver esto. Inicia sesión <%= link_to "aquí", new_user_session_path  %></p>
+<% end %>
