@@ -1,11 +1,5 @@
-<% if user_signed_in? %>
-	<h1>¡Bienvenido!</h1>
-	<p>Acceda a la <%= link_to "zona privada", private_index_path  %></p>
-	
-	<%= link_to "¡Sácame de aquí!", destroy_user_session_path, :method => :delete %>
-<% else %>
-	<h1>Bienvenido, por favor inicie sesión <%= link_to "aquí", new_user_session_path  %></h1>
-<% end %>
+<h1>Bienvenido, por favor inicie sesión <%= link_to "aquí", new_user_session_path  %></h1>
+
 
 
 
