@@ -1,28 +1,16 @@
-== README
+=Usando Devise
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+El objetivo de este challenge es aprender a utilizar Devise, el plugin de autenticación más popular de Ruby on Rails. Para esto, vamos a crear una aplicación que va a tener una página pública y otra privada.
 
-Things you may want to cover:
+===Instrucciones
 
-* Ruby version
+1. Crea una aplicación llamada devise
 
-* System dependencies
+2. Utiliza devise para crear el modelo User y configurar el signup, login, y logout.
 
-* Configuration
+3. Crea dos controladores: public_controller y private_controller, cada uno con una acción index y su respectiva vista.
 
-* Database creation
+4. La ruta principal de la aplicación (root) debe apuntar a la acción index de public_controller. Allí debe existir un link para registrarse o ingresar (login). Después de que el usuario ingresa, se le debe redireccionar a la acción index del private_controller (esta acción solo la pueden acceder los usuarios autenticados).
 
-* Database initialization
+5. Debe existir un link para hacer Logout si el usuario está autenticado (en las dos vistas).
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
